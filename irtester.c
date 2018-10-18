@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
   while(1) {
     printf("Waiting for reset\n");
     while(digitalRead(0) == 1);
-    ifttt("http://red.eecs.yorku.ca:8080/trigger/event/with/key/prince159", "Alarm", "is", "on");
+    ifttt("http://red.eecs.yorku.ca:8080/trigger/event/with/key/prince160", "Alert", "call", "help");
     digitalWrite(1, HIGH); delay(500);
     printf("Blue led is already on before the user waved hand and after\n");
     printf("waiting for event\n");
